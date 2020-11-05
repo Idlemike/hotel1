@@ -6,3 +6,28 @@
 @import "base/general";
 @import "../blocks/components/components";
 @import "../blocks/modules/modules";
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+.popup_is-opened {
+    display: block;
+}
+
+
+.popup_is-hidden {
+    display: none;
+}
+
+
+body {
+    background: $purple_color;
+}
