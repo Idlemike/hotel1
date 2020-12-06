@@ -1,0 +1,22 @@
+include ../../components/_dropdown/_dropdown
+    include ../../components/button/button
+
+header.header.header_indents
+        a.router(href="./")
+            .header__logo
+                img.logo_img(src="../../../img/svg/logo_small.svg")
+        .header__menu
+            .header__about: a.header__about_link(href="#") О нас
+            +dropdown_w_o_border('Услуги', 'header_services')
+            .header__vacancy: a.header__vacancy_link(href="#") Вакансии
+            .header__news: a.header__vacancy_link(href="#") Новости
+            +dropdown_w_o_border('Соглашения', 'header_agreements')
+            .mr20
+                +btn-small-bordercolor('войти', 'btn-sm-bordercolor_header')
+            +btn-big-fullcolor('зарегестрироваться', 'btn-big')
+
+
+
+
+
+

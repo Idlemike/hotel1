@@ -1,0 +1,17 @@
+.cards {
+    &__page {
+        background-color: #e5e5e5;
+    }
+    &__brand {
+        padding-bottom: 7.2rem;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        min-width: calc(38rem + 38rem + 32rem + 4rem * 2);
+        margin: 0 auto;
+    }
+    &__column_left {
+
+    }
+}

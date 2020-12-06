@@ -1,0 +1,13 @@
+.ratingStar_border {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../../img/svg/star_border.svg") center (center/cover) no-repeat;
+}
+
+.ratingStar_filled {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../../img/svg/star.svg") center (center/cover) no-repeat;
+}

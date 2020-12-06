@@ -1,0 +1,106 @@
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 190px;
+    border: 1px solid $ds50-color;
+    padding: 7px 7px 7px 15px;
+    &__rooms {
+        width: 100%;
+        min-width: 190px;
+        border-radius: 0 0 4px 4px;
+        border-top: none;
+    }
+    &__items {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 92px;
+    }
+    &__minus {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        &_bc25 {
+            border: 1px solid $ds25-color;
+        }
+        &_bc50 {
+            border: 1px solid $ds50-color;
+        }
+        &:before {
+            content: "-";
+            display: block;
+            color: $ds50-color;
+            font-size: 18px;
+            text-align: center;
+            padding-top: 3px;
+        }
+    }
+    &__plus {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        &_bc25 {
+            border: 1px solid $ds25-color;
+        }
+        &_bc50 {
+            border: 1px solid $ds50-color;
+        }
+        &:before {
+            content: "+";
+            display: block;
+            color: $ds50-color;
+            font-size: 18px;
+            text-align: center;
+            padding-top: 3px;
+        }
+    }
+    &__quantity {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $ds100-color;
+    }
+    &_mb50 {
+        margin-bottom: 50px;
+    }
+    &__commands {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: $purple_color;
+    }
+}
+
+.dropdown_w_o_border {
+    display: flex;
+    align-items: center;
+    margin: auto 2rem auto 0;
+    &__select {
+        position: relative;
+        border: none;
+        padding: 0;
+        font-weight: 400;
+        font-size: 14px;
+        color: $ds50-color;
+        background-color: transparent;
+    }
+
+    &__label {
+        font-weight: 400;
+        font-size: 14px;
+        color: $ds50-color;
+    }
+}

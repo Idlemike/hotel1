@@ -1,0 +1,14 @@
+extends ../layouts/default
+append config
+    - var title = "cards"
+
+block content
+    .cards__page.pb140
+        .cards__brand
+            include ../../blocks/components/brand/_brand
+        .cards__container
+            .cards__column_left
+            .cards__column_center
+            .cards__column_right
+
+

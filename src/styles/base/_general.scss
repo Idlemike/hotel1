@@ -4,9 +4,58 @@ h1, h2, h3, h4, h5, h6, ul {
 }
 
 .container {
-    @include container();
-    @include sm(max-width, rem(510));
-    @include md(max-width, rem(690));
-    @include lg(max-width, rem(930));
-    @include xl(max-width, rem(1110));
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    //@include container();
+    //@include sm(max-width, rem(510));
+    //@include md(max-width, rem(690));
+    //@include lg(max-width, rem(930));
+    //@include xl(max-width, rem(1110));
+    margin-left: auto;
+    margin-right: auto;
+    &_colorTypes {
+        padding: 67px 13% 145px 10%;
+    }
+    &_formElements {
+
+        padding-right: 10%;
+
+        padding-left: 10%;
+    }
 }
+.subcontainer {
+    display: flex;
+    flex-direction: column;
+    &_colors {
+        width: 270px;
+    }
+    &_titles {
+        width: 396px;
+    }
+    &_row {
+        flex-direction: row;
+    }
+    &__space-between {
+        justify-content: space-between;
+    }
+    &_formElements {
+        width: 320px;
+        &_w266 {
+            width: 26.6rem;
+        }
+        &_w62 {
+            display: flex;
+            width: 62%;
+        }
+        &_w45 {
+            width: 45%;
+        }
+    }
+}
+
+
+
+
+
+

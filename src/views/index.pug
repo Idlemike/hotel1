@@ -1,14 +1,20 @@
 extends layouts/default
-include helpers/mixins
+include helpers/_mixins
 
-block variables
-	- const title = "hotel1"
+append config
+	- var title = "hotel"
 
 block content
-	a(href="./colors_type")
-		h1 colors_type
-	a(href="./form_elements")
-		h1 form_elements
+	a(href="./colors-type.html")
+		h1 colors-type
+	a(href="./form-elements.html")
+		h1 form-elements
+	a(href="./headers_footers.html")
+		h1 headers&footers
+	a(href="./cards.html")
+		h1 cards
+	a(href="./Landing-page.html")
+		h1 Landing page
 
 block scripts
 	script(src="js/main.js")

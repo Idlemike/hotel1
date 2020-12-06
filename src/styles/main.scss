@@ -1,33 +1,56 @@
 @import "helpers/variables";
 @import "helpers/mixins";
 @import "helpers/functions";
+@import "helpers/graphic";
+@import "helpers/utils";
 @import "vendor/libs";
 @import "base/fonts";
 @import "base/general";
+@import "base/colors-type";
+@import "base/form&elements";
+@import "base/headers-footers";
+@import "base/cards";
 @import "../blocks/components/components";
 @import "../blocks/modules/modules";
 
 html {
-    box-sizing: border-box;
+    font-size: 62.5%;
     height: 100%;
-    font-family: "Montserrat", sans-serif;
 }
 
 *, *::before, *::after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
-
 
 .popup_is-opened {
     display: block;
 }
 
-
 .popup_is-hidden {
     display: none;
 }
 
-
 body {
-    background: $purple_color;
+    font-family: "Montserrat", sans-serif;
+    background: $bg-color;
+    font-size: 1.6rem;
+    font-weight: 400;
+    box-sizing: border-box;
 }
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page {
+    max-width: 144rem;
+    margin: 0 auto;
+    background: #ffffff;
+}
+

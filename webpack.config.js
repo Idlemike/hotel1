@@ -19,7 +19,8 @@ module.exports = {
 
     output: {
         filename: "[name].js",
-        chunkFilename: "[name].js",
+        chunkFilename: "[name]/[name].[chunkhash].js",
+        // chunkFilename: "[name].js",
         publicPath: "/"
     },
 

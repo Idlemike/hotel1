@@ -1,0 +1,15 @@
+extends ../layouts/default
+append config
+    - var title = "headers&footers"
+
+block content
+    .page_headers-footers.pb140
+        .brand_headers-footers
+            include ../../blocks/components/brand/_brand
+        .mb40
+            include ../../blocks/modules/header/header.pug
+        .mb40
+            include ../../blocks/modules/header/header_login.pug
+        .mb40
+            include ../../blocks/modules/footer/footer.pug
+        include ../../blocks/modules/footer/footer_small.pug
